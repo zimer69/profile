@@ -1,25 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 #profile-picture {
-  width: 20%;
+  width: 150px;
+  box-shadow: 0 0.625rem 1.875rem rgb(0 0 0 / 10%);
   border-radius: 50%;
 }
 
+#portfolio-picture {
+  width: 150px;
+  box-shadow: 0 0.625rem 1.875rem rgb(0 0 0 / 10%);
+  border-radius: 50%;
+  position: fixed;
+  left: 50px;
+  top: 30px;
+  z-index: 10;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+}
+
+#portfolio-picture:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0.1rem 0.5rem rgb(255 255 255);
+}
 #lewagon-logo {
-  width: 15%;
+  width: 120px;
+}
+
+#portfolio-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 body {
-  background-color: #ccfcae;
+  background-color: #fff8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  background-repeat: no-repeat;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 #lewagon-logo:hover {
-  width: 16%;
+  transform: scale(1.05);
+  filter: brightness(120%);
 }
 
-div {
+i:hover {
+  transform: scale(1.1);
+  filter: brightness(120%);
+}
+
+#button {
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: #3762A4;
+  border-radius: 10px;
+  color: white;
+  font-family: Roboto;
+}
+
+#button:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.profile {
   text-align: center;
-  margin: 1rem 20%;
+  margin: 1rem;
+  width: 50%;
   background-color: white;
   display: block;
   border-radius: 0.938rem;
@@ -27,13 +102,25 @@ div {
   padding: 1.5rem 2rem;
 }
 
-.link-footer:hover {
-  color: black;
-  font-size: 1.7rem;
+session {
+  text-align: center;
+  margin: 1rem;
+  width: 400px;
+  border: white 1px solid;
+  display: block;
+  border-radius: 0.938rem;
+  box-shadow: 0 0.625rem 1.875rem rgb(0 0 0 / 10%);
+  position: relative;
 }
 
+
 .link-footer {
-  color: rgba(0,0,0,0.8);
+  color: #3762A4;
+  font-size: 1.6rem;
+}
+
+.link-portfolio {
+  color: white;
   font-size: 1.6rem;
 }
 
@@ -51,16 +138,49 @@ div {
 h1 {
   font-size: 2.2rem;
   font-family: Roboto;
+  color: #3762A4
 }
 
 p {
   font-family: Roboto;
   font-size: 1rem;
+  color: #2D2929;
 }
 
 h2 {
   font-family: Roboto;
   font-size: 1.5rem;
+  color: #3762A4
+}
+
+h3 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-align: center;
+  font-family: 'Quicksand';
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: 'Quicksand';
+}
+
+.btn-ghost {
+  color: black;
+  border: 1px solid white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-decoration: none !important;
+  background-color: #eaeaea;
+}
+
+.btn-ghost:hover {
+  box-shadow: 0.1rem 0.1rem 1rem rgb(255 255 255);
 }
 
 @media (max-width: 960px) {
@@ -82,4 +202,56 @@ h2 {
   .container {
     width: 300px;
   }
+}
+
+p {
+  color: #3762A4
+  #2D2929
+  #E5E4D2
+
+}
+
+.container {
+  background-color: transparent;
+  display: flex;
+  box-shadow: none;
+  height: 70vh;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.card-list {
+  font-size: 1.4rem;
+  padding: 0 0.4rem;
+  color: white;
+  font-family:'Quicksand';
+  width: 80%;
+  text-align: left;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin: 10px 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  position: absolute;
+  bottom: 15px;
+  left: 30%;
+}
+
+.certificate {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#diploma {
+  height: 50vh;
 }
