@@ -243,3 +243,15 @@ p {
   bottom: 15px;
   left: 30%;
 }
+
+.certificate {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#diploma {
+  height: 50vh;
+}
