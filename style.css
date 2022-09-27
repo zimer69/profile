@@ -102,7 +102,7 @@ i:hover {
   padding: 1.5rem 2rem;
 }
 
-session {
+.portfolio-session {
   text-align: center;
   margin: 1rem;
   width: 400px;
@@ -197,10 +197,40 @@ h4 {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 960px) {
   /* For a screen < 540px, this CSS will be read */
+  #portfolio-picture {
+    width: 80px;
+  }
+
+  h3 {
+    font-size: 30px;
+    margin-top: 120px;
+  }
+
+  .portfolio-session {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-repeat: repeat;
+  }
+
+  #portfolio-background {
+    background-repeat: repeat;
+  }
+
   .container {
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-ghost {
+    margin: 70px 0 0 0;
+  }
+
+  .footer {
+    margin-top: 1300px;
   }
 }
 
