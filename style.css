@@ -8,12 +8,12 @@
 }
 
 #portfolio-picture {
-  width: 150px;
+  width: 120px;
   box-shadow: 0 0.625rem 1.875rem rgb(0 0 0 / 10%);
   border-radius: 50%;
   position: fixed;
-  left: 50px;
-  top: 30px;
+  left: 20px;
+  top: 20px;
   z-index: 10;
 }
 
@@ -216,7 +216,7 @@ p {
   display: flex;
   box-shadow: none;
   height: 70vh;
-  width: 70%;
+  width: 80%;
   justify-content: space-between;
 }
 
